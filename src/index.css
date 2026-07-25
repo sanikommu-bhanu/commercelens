@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  overscroll-behavior-y: none;
+}
+
+body {
+  @apply bg-stone-200 text-brand-dark font-body antialiased;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+.dark body {
+  @apply bg-black text-cream;
+}
+
+::selection {
+  background: #C9A788;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.app-shell {
+  @apply max-w-shell mx-auto min-h-screen relative bg-cream dark:bg-dark-bg;
+  transition: background-color 0.35s ease;
+}
+
+.arch {
+  border-radius: 50% 50% 0 0;
+}
+
+.glass {
+  @apply bg-white/70 dark:bg-dark-surface/70 backdrop-blur-xl border border-white/40 dark:border-white/10;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
