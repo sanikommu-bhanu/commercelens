@@ -4,7 +4,7 @@ import Input from '../../components/ui/Input';
 import Button from '../../components/ui/Button';
 import { useAuthStore } from '../../store/auth';
 
-const INDUSTRIES = ['Fashion & Apparel', 'Beauty & Cosmetics', 'Home & Living', 'Footwear', 'Accessories'];
+const INDUSTRIES = ['Fashion & Apparel', 'Footwear', 'Accessories'];
 
 export default function Onboarding() {
   const navigate = useNavigate();

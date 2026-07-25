@@ -45,7 +45,7 @@ export default function Home() {
           <div>
             <p className="text-xs text-text-muted flex items-center gap-1">Location</p>
             <p className="text-sm font-semibold flex items-center gap-1">
-              <MapPin size={14} className="text-brand-accent" /> New York, USA
+              <MapPin size={14} className="text-brand-accent" /> India
             </p>
           </div>
           <button className="w-10 h-10 rounded-full bg-white dark:bg-dark-surface shadow-softer flex items-center justify-center">
